@@ -59,59 +59,6 @@
       </v-btn>
     </v-speed-dial>
     <v-flex xs12 sm8 md6>
-      <!-- 直播面板 -->
-      <v-card :loading="lives_loading">
-        <v-card-title>
-          <v-icon class="primary--text" :class="dark_text" style="margin-right: 8px;">
-            {{ icons.clock_outline }}
-          </v-icon>
-          {{ $t('live.activity') }}
-        </v-card-title>
-        <!-- 订阅人数 -->
-        <v-card-text style="font-size: 1rem;">
-          {{ $t('site.subscriber') }}{{ youtubeData.subscriber_count }}
-        </v-card-text>
-        <v-card-text>
-          <!-- 正在直播 -->
-          <div v-for="live in lives" :key="live.id">
-            <div v-if="live.title.length" :class="dark_text">
-              <span class="warning--text">{{ $t('live.on_air') }}</span>
-              <youtube-link :video-key="live.yt_video_key" :content="live.title" class="error--text" />
-            </div>
-          </div>
-          <!-- 计划中的直播 -->
-          <div v-for="live in upcoming_lives" :key="live.id">
-            <div v-if="live.title.length" :class="dark_text">
-              <span>{{ $t('live.schedule') + format_time(live.live_schedule) }}</span>
-              <youtube-link :video-key="live.yt_video_key" :content="live.title" />
-            </div>
-          </div>
-          <div v-if="lives.length === 0 && upcoming_lives.length === 0">
-            <p>{{ lives_loading ? $t('live.loading') : $t('live.no_schedule') }}</p>
-          </div>
-          <div class="notification-board" v-html="$md.render($t('live.notification'))"></div>
-        </v-card-text>
-      </v-card>
-      <!-- 随机分享 -->
-      <v-card>
-        <v-card-title style="font-size: 1.25rem;">
-          <v-icon class="primary--text" :class="dark_text" style="margin-right: 8px;">
-            {{ icons.shuffle }}
-          </v-icon>
-          {{ $t('site.random') }}
-          <v-text-field
-            id="share"
-            style="padding: 16px 16px 0 16px;"
-            type="text"
-            value
-            :placeholder="$t('site.placeholder')"
-          >
-          </v-text-field>
-          <voice-btn :class="voice_button_color" @click.native="randomshare()">
-            {{ $t('site.share') }}
-          </voice-btn>
-        </v-card-title>
-      </v-card>
       <!-- 对每个按钮组生成一个Card -->
       <v-card v-for="group in groups" :key="group.name">
         <v-card-title class="headline" :class="dark_text">
@@ -169,7 +116,6 @@ $nonlinear-transition: cubic-bezier(0.25, 0.8, 0.5, 1);
 import voice_lists from '~/assets/voices.json';
 import DevWarning from '../components/DevWarning';
 import VoiceBtn from '../components/VoiceBtn';
-import YoutubeLink from '../components/YoutubeLink';
 import {
   mdiClockOutline,
   mdiClose,
@@ -183,7 +129,6 @@ import {
 
 export default {
   components: {
-    YoutubeLink,
     VoiceBtn,
     DevWarning
   },
@@ -207,7 +152,7 @@ export default {
       now_playing: new Set(),
       upcoming_lives: [],
       lives: [],
-      lives_loading: true,
+      lives_loading: true
     };
   },
   computed: {
@@ -253,7 +198,6 @@ export default {
   },
   async mounted() {
     this.$vuetify.theme.dark = this.$store.state.dark === 'true';
-    await this.fetch_live_data();
     //Media Session Metadata
     if ('mediaSession' in navigator) {
       navigator.mediaSession.setActionHandler('nexttrack', () => {
@@ -267,7 +211,7 @@ export default {
         navigator.mediaSession.playbackState = 'paused';
       });
     }
-    this.youtube();
+    // this.youtube();
   },
   methods: {
     format_time(stamp) {
@@ -282,40 +226,6 @@ export default {
           eventAction: 'play',
           eventLabel: item.name + ' ' + item.description['zh']
         });
-      }
-    },
-    
-    randomshare() {
-      let random_list = this.groups[this.get_random_int(this.groups.length)].voice_list;
-      var title = random_list[this.get_random_int(random_list.length)].description[this.current_locale];
-      var res = document.getElementById('share').value;
-      if (this.current_locale === 'ja') {
-        window.open(
-          'https://twitter.com/intent/tweet?text=' +
-            '%23みこボタン %23さくらみこ 今日、「' +
-            res +
-            '」のランダムオーディオは「' +
-            title +
-            '」です！ より多くのオーディオを聞くには、「みこボタン」のWebサイトにアクセスしてください~ https://sakuramiko.org'
-        );
-      } else if (this.current_locale === 'en') {
-        window.open(
-          'https://twitter.com/intent/tweet?text=' +
-            '%23みこボタン %23さくらみこ Today,' +
-            res +
-            "'s random audio is %22" +
-            title +
-            '%22! Visit Miko Button Website For More Audio! https://sakuramiko.org'
-        );
-      } else {
-        window.open(
-          'https://twitter.com/intent/tweet?text=' +
-            '%23みこボタン %23さくらみこ 今天，“' +
-            res +
-            '”的随机音频是“' +
-            title +
-            '”！ 访问樱按钮网站聆听更多音频 https://sakuramiko.org'
-        );
       }
     },
     play(item) {

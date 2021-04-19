@@ -163,10 +163,10 @@ $blur-function: blur(3px);
   }
 }
 .gradient-header-light {
-  background-image: linear-gradient(120deg, #ff6c9a 0%, #ffa3c0 100%) !important;
+  background-image: linear-gradient(120deg, #000000 0%, #aa0000 100%) !important;
 }
 .gradient-header-dark {
-  background-image: linear-gradient(120deg, #da5f86 0%, #cf869d 100%) !important;
+  background-image: linear-gradient(120deg, #000000 0%, #aa0000 100%) !important;
 }
 .nav-drawer-img {
   width: auto;
