@@ -9,10 +9,48 @@
       },
       "voice_list": [
         {
-          "name": "miko-daily-001",
-          "path": "miko-daily-001.mp3",
+          "name": "ly-daily-001",
+          "path": "ly-daily-001.mp3",
           "description": {
-            "zh": "谢谢你 谢谢你了",
+            "zh": "我裂开惹",
+            "ja": "thank you ありがと",
+            "en": "Thank you,thank you"
+          }
+        }
+      ]
+    },
+    {
+      "group_name": "daily",
+      "group_description": {
+        "zh": "▌语气词",
+        "ja": "▌日常",
+        "en": "▌Daily"
+      },
+      "voice_list": [
+        {
+          "name": "ly-modal-001",
+          "path": "ly-modal-001.mp3",
+          "description": {
+            "zh": "艹",
+            "ja": "thank you ありがと",
+            "en": "Thank you,thank you"
+          }
+        }
+      ]
+    },
+    {
+      "group_name": "aho",
+      "group_description": {
+        "zh": "▌坏掉了",
+        "ja": "▌日常",
+        "en": "▌Daily"
+      },
+      "voice_list": [
+        {
+          "name": "ly-aho-001",
+          "path": "ly-aho-001.mp3",
+          "description": {
+            "zh": "ehehehehe",
             "ja": "thank you ありがと",
             "en": "Thank you,thank you"
           }
