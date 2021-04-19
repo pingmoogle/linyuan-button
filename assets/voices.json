@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "group_name": "daily",
+      "group_description": {
+        "zh": "▌日常",
+        "ja": "▌日常",
+        "en": "▌Daily"
+      },
+      "voice_list": [
+        {
+          "name": "miko-daily-001",
+          "path": "miko-daily-001.mp3",
+          "description": {
+            "zh": "谢谢你 谢谢你了",
+            "ja": "thank you ありがと",
+            "en": "Thank you,thank you"
+          }
+        }
+      ]
+    }
+  ]
+}
