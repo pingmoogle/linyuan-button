@@ -16,11 +16,29 @@
             "ja": "thank you ありがと",
             "en": "Thank you,thank you"
           }
+        },
+        {
+          "name": "ly-daily-002",
+          "path": "ly-daily-002.mp3",
+          "description": {
+            "zh": "我太牛啦~~",
+            "ja": "thank you ありがと",
+            "en": "Thank you,thank you"
+          }
+        },
+        {
+          "name": "ly-daily-003",
+          "path": "ly-daily-003.mp3",
+          "description": {
+            "zh": "要小鸡",
+            "ja": "thank you ありがと",
+            "en": "Thank you,thank you"
+          }
         }
       ]
     },
     {
-      "group_name": "daily",
+      "group_name": "modal",
       "group_description": {
         "zh": "▌语气词",
         "ja": "▌日常",
@@ -32,6 +50,15 @@
           "path": "ly-modal-001.mp3",
           "description": {
             "zh": "艹",
+            "ja": "thank you ありがと",
+            "en": "Thank you,thank you"
+          }
+        },
+        {
+          "name": "ly-modal-002",
+          "path": "ly-modal-002.mp3",
+          "description": {
+            "zh": "哇哦",
             "ja": "thank you ありがと",
             "en": "Thank you,thank you"
           }
@@ -53,6 +80,25 @@
             "zh": "ehehehehe",
             "ja": "thank you ありがと",
             "en": "Thank you,thank you"
+          }
+        }
+      ]
+    },
+    {
+      "group_name": "song",
+      "group_description": {
+        "zh": "▌激唱",
+        "ja": "▌呗",
+        "en": "▌Songs"
+      },
+      "voice_list": [
+        {
+          "name": "ly-song-001",
+          "path": "ly-song-001.mp3",
+          "description": {
+            "zh": "song1",
+            "ja": "song1",
+            "en": "song1"
           }
         }
       ]
