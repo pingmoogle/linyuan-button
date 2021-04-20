@@ -1,8 +1,6 @@
-# 樱按钮 / みこボタン / Miko Button
+# 渊仔按钮 Linyuan Button
 
-### 就这样吧。
-
-### https://sakuramiko.org
+### https://linyuan.site
 
 <!-- 相关链接 / 関連URL / Related Links:
 
@@ -16,15 +14,15 @@
 
 欢迎参与完善这个并不成熟的项目，或者为我们提出宝贵的意见！
 
-联系方式：Email: `support@vbup.org`
+联系方式：Email: `soowindance@gmail.com`
 
-如有意完善此项目，请 Fork 本项目进行修改，完成修改后在本项目中发起一个 Pull Request。
+该项目是由`樱按钮`fork而来的：[樱按钮](https://github.com/voosc/miko-button)
 
 ### 添加或修改音频
 
-**简述**：所有的音频信息都存储在 [assets/voices.json](https://github.com/voosc/miko-button/tree/master/assets/voices.json) 中，要添加或修改音频，你需要同时修改对应的文件。
+**简述**：所有的音频信息都存储在 `assets/voices.json` 中，要添加或修改音频，你需要同时修改对应的文件。
 
-音频一律为mp3格式，存储在 [static/voices](https://github.com/voosc/miko-button/tree/master/static/voices) 中。对应的URL为 `voices/`。
+音频一律为mp3格式，存储在 `static/voices` 中。对应的URL为 `voices/`。
 
 添加的新音频请先使用类似 Adobe Audition 的软件进行响度匹配，目前使用的标准为 ITU-R BS.1770-3，目标响度 -24LUFS，容差 2LU，最高实际峰值电平 -2dBTP。
 
@@ -36,9 +34,11 @@
 
 ### 参与翻译
 
-主程序翻译在 [assets/locales](https://github.com/voosc/miko-button/tree/master/assets/locales) 中的三个以语言名命名的 js 文件中。
+在渊仔按钮中，暂时去除了翻译功能。
 
-语音的翻译在 [assets/voices.json](https://github.com/voosc/miko-button/tree/master/assets/voices.json) 中。
+主程序翻译在 `assets/locales` 中的三个以语言名命名的 js 文件中。
+
+语音的翻译在 `assets/voices.json` 中。
 
 ## 部署本地开发环境
 
@@ -56,7 +56,7 @@
 
 ## LICENSE
 
-This project is modified based on the [Fubuki button](https://github.com/lonelyion/fubuki-button).
+This project is modified based on the [Fubuki button](https://github.com/lonelyion/fubuki-button) and [Sakura Button](https://github.com/vbup-osc/miko-button).
 
 > 注：若以下内容存在与GPL协议内容冲突或GPL协议内容未提及的，请按以下内容为准。
 
@@ -69,24 +69,5 @@ This project is modified based on the [Fubuki button](https://github.com/lonelyi
 
 <!-- 音频部分: [hololive 二次创作条款](https://www.hololive.tv/terms) -->
 
-本项目为爱好者作品，与 hololive 官方没有关联。
+本项目为爱好者作品。
 
-## 特别感谢
-
-#### 音频资源由赌鬼巫女保护协会提供。
-
-[他们的 Bilibili 频道](https://space.bilibili.com/487446531)
-
-#### 本项目由 [Vercel](https://www.vercel.com/?utm_source=vbuposc&utm_campaign=oss) 强力驱动。
-
-[![Vercel Logo](https://cdn.jsdelivr.net/gh/paizi/vue-test/vercel.svg)](https://www.vercel.com/?utm_source=vbuposc&utm_campaign=oss)
-
-#### 自豪的使用 [BrowserStack](https://www.browserstack.com/)。
-
-[![BrowserStack Logo](https://i.loli.net/2017/09/27/59cbc16b0f8b4.png)](https://www.browserstack.com/)
-
-以及所有支持这个项目的朋友，你们的鼓励是我孜孜不倦的源动力，谢谢你们。
-
-[![GitHub Contributors](https://contributors-img.web.app/image?repo=voosc/miko-button)](https://github.com/voosc/miko-button/graphs/contributors)
-
-虚位以待...

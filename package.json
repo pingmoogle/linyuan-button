@@ -1,14 +1,14 @@
 {
-  "name": "miko-button",
-  "version": "1.4.0",
-  "description": "Voice Button for Sakura Miko",
+  "name": "linyuan-button",
+  "version": "1.0.0",
+  "description": "Voice Button for linyuan",
   "author": "VBUP",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate && node rename.js",
+    "generate": "nuxt generate && node rename.js && /bin/cp -rf dist /var/www/html",
     "test": "mocha tests/*.spec.js",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."

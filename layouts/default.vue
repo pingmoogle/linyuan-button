@@ -94,7 +94,7 @@
         </template>
         <span>{{ $t('site.switch_dark_mode') }}</span>
       </v-tooltip>
-      <v-menu offset-y>
+      <!-- <v-menu offset-y>
         <template v-slot:activator="{ on: menu }">
           <v-tooltip bottom>
             <template v-slot:activator="{ on: tooltip }">
@@ -116,7 +116,7 @@
             <v-list-item-title>English</v-list-item-title>
           </v-list-item>
         </v-list>
-      </v-menu>
+      </v-menu> -->
     </v-app-bar>
     <v-main>
       <v-container>
@@ -133,14 +133,12 @@
             </span>
           </div> -->
           <div>
-            <span>Powered by</span>
-            <a href="https://www.vercel.com/?utm_source=vbuposc&utm_campaign=oss" target="_blank" rel="noreferrer">
-              <img :src="vercel_logo" alt="vercel" height="16px" />
-            </a>
-            <a> And https://github.com/voosc/miko-button</a>
+            <p>🎵提供新的渊仔音频：soowindance@gmail.com</p>
+            <!-- <a href="/about">关于该项目</a> -->
+            <span>🌸相关代码由<a href="https://github.com/vbup-osc/miko-button">樱按钮</a>fork而来</span>
           </div>
           <div>
-            <p>{{ $t('site.footer.content') }}</p>
+            <!-- <p>{{ $t('site.footer.content') }}</p> -->
           </div>
         </div>
       </v-footer>
@@ -255,7 +253,7 @@ export default {
         {
           icon: 'newspaper',
           title: '渊仔の鱼塘【QQ群】',
-          to: '#'
+          to: 'https://t.bilibili.com/505066490197797951'
         }
       ]
     };

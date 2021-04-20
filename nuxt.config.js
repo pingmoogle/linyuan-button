@@ -13,30 +13,30 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'みこボタン',
+    title: '临渊按钮',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'さくらみこ　ボイスボタン; 樱巫女的语音按钮'
+        content: '一只渊仔的语音按钮'
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'みこボタン,MIKO BUTTON,樱按钮,hololive,Sakura Miko,さくらみこ,35P,樱巫女,语音按钮,ボイスボタン'
+        content: '樱按钮,语音按钮,渊仔,一只凛渊'
       },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'みこボタン' },
+      { hid: 'og:site_name', property: 'og:site_name', content: '渊仔按钮' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://sakuramiko.org' },
-      { hid: 'og:title', property: 'og:title', content: 'みこボタン' },
+      { hid: 'og:url', property: 'og:url', content: 'https://linyuan.site' },
+      { hid: 'og:title', property: 'og:title', content: '渊仔按钮' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'さくらみこのボイスボタン。'
+        content: '渊仔的语音按钮。'
       },
-      { hid: 'og:image', property: 'og:image', content: 'https://sakuramiko.org/img/og_common.jpg' },
+      { hid: 'og:image', property: 'og:image', content: 'https://linyuan.site/img/media-cover.jpg' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@samuimomijiyuki' }
     ],
@@ -104,7 +104,7 @@ export default {
   pwa: {
     manifest: {
       start_url: '/?standalone=true',
-      name: 'みこボタン'
+      name: '渊仔按钮'
     },
     workbox: {
       swURL: '/service-worker.js',
@@ -112,6 +112,7 @@ export default {
       runtimeCaching: [
         {
           urlPattern: 'https://cdn.jsdelivr.net/gh/voosc/miko-button@master/static/voices/*'
+          // urlPattern: '/voices/*'
         }
       ]
     }
@@ -125,7 +126,7 @@ export default {
   },
   sitemap: {
     path: '/sitemap.xml',
-    hostname: 'https://sakuramiko.org',
+    hostname: 'https://linyuan.site',
     routes: [
       {
         url: '/',

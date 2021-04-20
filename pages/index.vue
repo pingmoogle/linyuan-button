@@ -157,9 +157,7 @@ export default {
   },
   computed: {
     voice_host() {
-      if (process.env.NODE_ENV === 'production')
-        return 'https://cdn.jsdelivr.net/gh/voosc/miko-button@master/static/voices/';
-      else return '/voices/';
+      return '/voices/';
     },
     dark_text() {
       return {
@@ -335,7 +333,7 @@ export default {
   head() {
     return {
       title: this.$t('site.title'),
-      link: [{ rel: 'canonical', href: 'https://sakuramiko.org' }]
+      link: [{ rel: 'canonical', href: 'https://linyuan.site' }]
     };
   }
 };
