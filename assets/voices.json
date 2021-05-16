@@ -26,6 +26,20 @@
           "description": {
             "zh": "要小鸡"
           }
+        },
+        {
+          "name": "ly-daily-004",
+          "path": "ly-daily-004.mp3",
+          "description": {
+            "zh": "干嘛~"
+          }
+        },
+        {
+          "name": "ly-daily-005",
+          "path": "ly-daily-005.mp3",
+          "description": {
+            "zh": "像nm做梦一样！"
+          }
         }
       ]
     },
@@ -62,6 +76,20 @@
           "path": "ly-aho-001.mp3",
           "description": {
             "zh": "ehehehehe"
+          }
+        },
+        {
+          "name": "ly-aho-002",
+          "path": "ly-aho-002.mp3",
+          "description": {
+            "zh": "阿巴阿巴"
+          }
+        },
+        {
+          "name": "ly-aho-003",
+          "path": "ly-aho-003.mp3",
+          "description": {
+            "zh": "阿巴阿巴2"
           }
         }
       ]
