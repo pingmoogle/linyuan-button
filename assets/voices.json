@@ -93,21 +93,6 @@
           }
         }
       ]
-    },
-    {
-      "group_name": "song",
-      "group_description": {
-        "zh": "▌激唱"
-      },
-      "voice_list": [
-        {
-          "name": "ly-song-001",
-          "path": "ly-song-001.mp3",
-          "description": {
-            "zh": "song1"
-          }
-        }
-      ]
     }
   ]
 }
