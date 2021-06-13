@@ -4,7 +4,7 @@
 <script>
 export default {
   mounted() {
-    console.log('Email me: soowindance@gmail.com');
+    console.log('Email me: pinggaikun@gmail.com');
   }
 };
 </script>

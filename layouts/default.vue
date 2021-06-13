@@ -133,9 +133,9 @@
             </span>
           </div> -->
           <div>
-            <p>🎵提供新的渊仔音频：soowindance@gmail.com</p>
+            <p>🎵提供新的渊仔音频：<a href="mailto:pinggaikun@gmail.com">pinggaikun@gmail.com</a></p>
             <!-- <a href="/about">关于该项目</a> -->
-            <span>🌸相关代码由<a href="https://github.com/vbup-osc/miko-button">樱按钮</a>fork而来</span>
+            <span>🌸相关代码由<a href="https://github.com/vbup-osc/miko-button">樱按钮</a>Fork而来</span>
           </div>
           <div>
             <!-- <p>{{ $t('site.footer.content') }}</p> -->

@@ -14,7 +14,7 @@
 
 欢迎参与完善这个并不成熟的项目，或者为我们提出宝贵的意见！
 
-联系方式：Email: `soowindance@gmail.com`
+联系方式：Email: `pinggaikun@gmail.com`
 
 该项目是由`樱按钮`fork而来的：[樱按钮](https://github.com/voosc/miko-button)
 
